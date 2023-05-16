@@ -20,16 +20,41 @@ const readLine = require('readline').createInterface ({
                                 break;
                              case 'José' :
                                  console.log("Seja bem vindo ao evento, José");
-                                break;  {
+                        
+                                 
                      
-                                else { console.log('Seu nome não consta em nossa lista de convidados! '); }
+                        default:  console.log('Seu nome não consta em nossa lista de convidados! Faça o seu Cadastro!'); 
                             
-                            }
+                        }
+                        
+            
+            readLine.question('Qual o ano do seu Nascimento?', ano=>{
+                        
+                        if(ano > 2004) {
+                         console.log('Você não tem 18 anos, Acesso permitido somente com acompanhante!');}
+                            
+                         if(ano < 2004) {
+                            console.log('Acesso permitido, aproveite a noite!')
+                         }
+                            
+                        
+                         
+                        
+                        })        
+                             
+
+                    })        
+ 
 
 
+            
+            
+            
+                    
+            
+            
 
-                }
-                    }
+        
 
                    
 
